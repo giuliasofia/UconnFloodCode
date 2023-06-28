@@ -1,12 +1,12 @@
 # UconnFloodCode
-
+## These codes were produced as part of the NASA High Mountain Asia program (grant #80NSSC20K1300)
 ## 28june2023: this is a beta version of the codes ##
 
 This script include the codes to produce a proxy of flood mapping from global available datasets. 
 
 The scripts produce maps of Flood Geomorphic Potential (FGP), calculated as the logarithm of the ratio between the bankfull elevations (estimated using a hydraulic scaling function -HSF-) in the element of the river network closest to the point under examination and the elevation difference between these two points. 
-This index was originally defined by ​Samela et al., (2017)​. The script provides a modified version of their approach.
-For the definition of the HSF, the script identifies the river widths, and calculate the bankful elevation from there. For this, bankfull widths are automatically identified according to the methods by ​(Sofia, et al., 2017; Sofia et al., 2015)​. The advantage of its implementation is that FGP is automated and does not require any additional information other than terrain data.  
+This index was originally defined by ​Samela et al., (2017)​. These scripts provide a modified version of their approach.
+For the definition of the HSF, the system infers bankfull widths from the topography, and calculate the bankful elevation from there. For this, bankfull widths are automatically identified according to the methods by ​Sofia, et al., (2017); Sofia et al., (2015)​. The advantage of its implementation is that FGP is automated and does not require any additional information other than terrain data.  
 
 ## Important notes:
 - The scripts heavily rely on TopoToolbox, provided by Schwanghart and Scherler  
