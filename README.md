@@ -11,7 +11,8 @@ For the definition of the HSF, the system infers bankfull widths from the topogr
 ## Important notes:
 - The scripts heavily rely on TopoToolbox, provided by Schwanghart and Scherler  
 https://github.com/wschwanghart/topotoolbox
-- The script downloads the terrain data using the function "readopentopo" included in topotoolbox. The function uses opentopography’s RESTful Web service for global raster data access for seamless download of global digital elevation models. As of  January 1st, 2022, an API authorization key is required for this API. Users can request an API key via myOpenTopo in the OpenTopography portal (https://opentopography.org/developers).
+- The script at 30m, downloads the terrain data using a modified version of the function "readopentopo" included in topotoolbox. The function uses opentopography’s RESTful Web service for global raster data access for seamless download of global digital elevation models. As of  January 1st, 2022, an API authorization key is required for this API. Users can request an API key via myOpenTopo in the OpenTopography portal (https://opentopography.org/developers).
+- The script for the 8m DEM processing, downloads the terrain data using the CMR Search API [https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html]. For this, users need a login and password for https://urs.earthdata.nasa.gov/
  
 ## References:
 - ​Samela, C., Troy, T. J., & Manfreda, S. (2017). Geomorphic classifiers for flood-prone areas delineation for data-scarce environments. Advances in Water Resources, 102, 13–28. https://doi.org/10.1016/j.advwatres.2017.01.007 
